@@ -3,6 +3,12 @@ body {
     overflow: hidden;
     margin: none;
 }
+h1 {
+    margin-left: 175px;
+}
+a {
+    pointer-events: none;
+}
 
 .bg-image {
     display: flex;
@@ -14,7 +20,7 @@ body {
     height: 100vh;
 }  
 
-img {
+.rpsImg {
     background-size: cover;
     opacity: 0.6;
     height: 100vh;
@@ -31,6 +37,11 @@ img {
     left: 0;
 }
 
+.bodyClass{
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* header goes here */
 
@@ -41,9 +52,65 @@ header {
     justify-content: center;
     align-items: center;
 }
+
 h1 {
     padding: 10px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     border: solid black;
 }
+
+/* Section goes here */
+section {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+h2 {
+    margin: 0px;
+    text-align: center;
+}
+
+.gameObj {
+    width: 150px;
+    height: 150px;
+}
+
+/* footer goes here */
+ footer {
+    height: 50px;
+    background-color: dimgray;
+ }
+
+
+ /* misc seettings */
+
+ .playerScore {
+    display: inline;
+ }
+
+ .flexRow {
+    display: flex;
+    flex-direction: row;
+ }
+
+ .scoreGame {
+    min-height: 587.167px;
+    min-width: 150px;
+    margin: 0 10px;
+ }
+
+ .gameColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+ }
+
+ .gameImg {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+ }
