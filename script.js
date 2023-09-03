@@ -1,18 +1,30 @@
+const playRound = function(playerSelection, computerSelection) {
+
+    if (playerSelection == "rock" && computerSelection == "scissors" || playerSelection == "paper" && computerSelection == "rock" || playerSelection == "scissors" && computerSelection == "paper") {
+        return `player Chose ${playerSelection} and computer chose ${computerSelection} you win!!`
+    } else if(playerSelection == "scissors" && computerSelection == "rock" || playerSelection == "rock" && computerSelection == "paper" || playerSelection == "paper" && computerSelection == "scissors") {
+        return `player Chose ${playerSelection} and computer chose ${computerSelection} you lose!!`
+    } else if (playerSelection == computerSelection) {
+        return `player Chose ${playerSelection} and computer chose ${computerSelection} It's a tie!!`
+    } else {
+      return `invalid input please type Rock, paper or scissors,`
+    }
+
+}
+
+
 function getComputerChoice() {
 const choices = ["Rock", "Paper", "Scissors"];
-const randomNumber = Math.floor(Math.random() *choices.length)
-return choices[randomNumber]
+const randomNumber = Math.floor(Math.random() *choices.length) // math floor reduces the number to a whole number lowest possible. math random generates a value from 0 to 1. choices.length measures the index of the array
+return choices[randomNumber] // return value to the function
 } 
+
 
 playerSelection = prompt(`Rock, Paper, or Scissors?`).toLowerCase()
 computerSelection = getComputerChoice().toLowerCase()
+console.log(playRound(playerSelection, computerSelection))
 
-if(playerSelection == "rock" && computerSelection == "scissors" || playerSelection == "paper" && computerSelection == "rock" || playerSelection == "scissors" && computerSelection == "paper") {
-    alert(`You chose "${playerSelection}" and computer chose "${computerSelection}" you win!!`)
-} else if(playerSelection == "scissors" && computerSelection == "rock" || playerSelection == "rock" && computerSelection == "paper" || playerSelection == "paper" && computerSelection == "scissors") {
-    alert(`You chose "${playerSelection}" and computer chose "${computerSelection}",  you lose noob!!`)
-} else if (playerSelection == computerSelection) {
-    alert(`You chose "${playerSelection}" and computer chose "${computerSelection}".  It's a tie!!`)
-} else {
-  alert(`Invalid input please type Rock, Paper or Scissors,`)
-}
+
+ 
+
+
