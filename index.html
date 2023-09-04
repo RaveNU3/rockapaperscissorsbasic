@@ -3,9 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="bg-image">
+      <img
+        class="rpsImg"
+        src="https://images.squarespace-cdn.com/content/v1/51b3dc8ee4b051b96ceb10de/d114cf79-6df8-4159-8a4b-a3586e31c9b3/Screen+Shot+2023-02-27+at+12.57.43+PM.jpg"
+        alt=""
+      />
+    </div>
+
+    <div class="bodyClass">
+      <header><h1>ROCK PAPER SCISSORS GAME</h1></header>
+      <section class="sectionBody">
+        <div class="flexRow">
+          <div class="scoreGame">
+            <div class="stats">
+              <h3 class="playerScore">Player:</h3>
+              <p class="playerScore">1</p>
+            </div>
+            <div class="stats">
+              <h3 class="playerScore">Computer :</h3>
+              <p class="playerScore"></p>
+            </div>
+          </div>
+          <div class="gameColumn">
+            <h2 class="headingTwo">ROCK PAPER SCISSORS?</h2>
+            <!-- img file -->
+            <div class="gameImg" id="rockObj">
+              <a href=""
+                ><img
+                  class="gameObj"
+                  src="https://nationaltoday.com/wp-content/uploads/2021/08/National-Pet-Rock-Day.jpg"
+                  alt="ROCK"
+              /></a>
+              <a href="" id="paperObj"
+                ><img
+                  class="gameObj"
+                  src="https://ggie.berkeley.edu/wp-content/uploads/2020/02/Crumpled_Reminder_1200x630.jpg"
+                  alt="PAPER" /></a
+              ><a href="" id="scissorsObj"
+                ><img
+                  class="gameObj"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Standard_household_scissors.jpg/800px-Standard_household_scissors.jpg"
+                  alt="SCISSORS"
+              /></a>
+            </div>
+          </div>
+
+          <!-- img file -->
+        </div>
+      </section>
+      <footer></footer>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
