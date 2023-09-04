@@ -6,9 +6,7 @@ body {
 h1 {
     margin-left: 175px;
 }
- a {
-    pointer-events: none;
- }
+ 
 
 .bg-image {
     display: flex;
